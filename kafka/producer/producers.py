@@ -34,7 +34,7 @@ def make_request(url):
         'last_update': last_update
     })
 
-    print(f"Sending data: {data_in_json} to Kafka")
+    print(f"Sending data to Kafka")
 
     producer.send('cryptoprices', value=data_in_json.encode('utf-8'))
     producer.flush()

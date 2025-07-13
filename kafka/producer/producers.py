@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 import time
 
-KAFKA_SERVER = '3.110.156.76:9092'
+KAFKA_SERVER = '15.206.178.27:9092'
 
 producer = KafkaProducer( bootstrap_servers=KAFKA_SERVER)
 
